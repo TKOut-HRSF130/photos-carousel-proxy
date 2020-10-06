@@ -7,5 +7,5 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
-  console.log(`Proxy Server is listening on https:??localhost:${port}`);
+  console.log(`Proxy Server is listening on http://localhost:${port}`);
 });
