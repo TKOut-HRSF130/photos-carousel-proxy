@@ -1,0 +1,59 @@
+#header {
+  display: block;
+  margin: 0 auto;
+}
+
+#sidebar {
+  position: absolute;
+  right: 75px;
+  width: 352px;
+  /* top: 124%; */
+  transform: translateY(-200px);
+  z-index: -1;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 20% auto 30%;
+  grid-column-gap: 20px;
+  grid-template-rows: 100%;
+}
+
+#info {
+  grid-column: 2 / 3;
+  max-width: 100%;
+  margin-top: -5%;
+
+  /* width: 660px;
+  margin: 0 1rem 0 0; */
+  /* transform: translateX(-150px); */
+}
+
+#bookings {
+  grid-column: 3 / 4;
+  grid-row-start: 1;
+  margin-top: -52%;;
+  /* height: 200px; */
+  /* display: block;
+  /* position: fixed; */
+  /* height: 200px;
+  z-index: 5; */
+}
+#app {
+  display: block;
+  margin: 0 auto;
+  height: 450px;
+  transform: translateX(-140px);
+}
+#popular-dishes-section {
+  display: block;
+  margin: 0 auto;
+  height: 425px;
+  width: 678px;
+  transform: translateX(-150px);
+}
+#ReviewModule {
+  display: block;
+  margin: 0 auto;
+  transform: translateX(-150px);
+}
