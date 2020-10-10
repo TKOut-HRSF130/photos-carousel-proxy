@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 // ------------------ Bookings ---------------------------
 app.get('/api/bookings/restaurantName/:id', (req, res) => {
-  axios.get(`http//localhost:3000/bookings/restaurantName/${req.params.id}?restaurantId=${req.params.id}`)
+  axios.get(`http://54.193.230.62/bookings/restaurantName/${req.params.id}?restaurantId=${req.params.id}`)
     .then((response) => {
       res.status(200).send(response.data);
     })
@@ -20,7 +20,7 @@ app.get('/api/bookings/restaurantName/:id', (req, res) => {
 })
 
 app.get('/api/bookings/:id', (req, res) => {
-  axios.get(`http://localhost:3000/api/bookings/${req.params.id}`, {
+  axios.get(`http://54.193.230.62/api/bookings/${req.params.id}`, {
     params: req.query
   })
     .then((response) => {
@@ -44,7 +44,7 @@ app.get('/api/bookings/:id', (req, res) => {
 
 // -------------- Photos --------------------------------
 app.get('/api/restaurants/photos/:id', (req, res) => {
-  axios.get(`http://localhost:3003/api/restaurants/photos/${req.params.id}`)
+  axios.get(`http://34.201.104.34/api/restaurants/photos/${req.params.id}`)
     .then((response) => {
       res.status(200).send(response.data)
     })
@@ -55,7 +55,7 @@ app.get('/api/restaurants/photos/:id', (req, res) => {
 
 // --------------- POPULAR DISHES -----------------------------------
 app.get('/api/dishes/restaurant/:id', (req, res) => {
-  axios.get(`http://localhost:3001/api/dishes/restaurant/${req.params.id}`)
+  axios.get(`http://54.67.110.162/api/dishes/restaurant/${req.params.id}`)
     .then((response) => {
       res.status(200).send(response.data)
     })
@@ -66,7 +66,7 @@ app.get('/api/dishes/restaurant/:id', (req, res) => {
 
 // ------------------ Reviews ----------------------
 app.get('/api/restaurants/:id', (req, res) => {
-  axios.get(`http://localhost:3002/api/restaurants/${req.params.id}`)
+  axios.get(`http://3.101.36.32/api/restaurants/${req.params.id}`)
     .then((response) => {
       // console.log('Response Data: ', response.data);
       res.status(200).send(response.data)
@@ -76,7 +76,7 @@ app.get('/api/restaurants/:id', (req, res) => {
     })
 })
 app.get('/api/review_list/:id', (req, res) => {
-  axios.get(`http://localhost:3002/api/review_list/${req.params.id}`)
+  axios.get(`http://3.101.36.32/api/review_list/${req.params.id}`)
     .then((response) => {
       // console.log('Response Data: ', response.data);
       res.status(200).send(response.data)
@@ -86,7 +86,7 @@ app.get('/api/review_list/:id', (req, res) => {
     })
 })
 app.get('/api/users', (req, res) => {
-  axios.get(`http://localhost:3002/api/users`)
+  axios.get(`http://3.101.36.32/api/users`)
     .then((response) => {
       // console.log('Response Data: ', response.data);
       res.status(200).send(response.data)

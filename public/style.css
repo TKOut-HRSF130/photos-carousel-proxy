@@ -7,7 +7,6 @@
   position: absolute;
   right: 75px;
   width: 352px;
-  /* top: 124%; */
   transform: translateY(-200px);
   z-index: -1;
 }
@@ -23,21 +22,12 @@
   grid-column: 2 / 3;
   max-width: 100%;
   margin-top: -5%;
-
-  /* width: 660px;
-  margin: 0 1rem 0 0; */
-  /* transform: translateX(-150px); */
 }
 
 #bookings {
   grid-column: 3 / 4;
   grid-row-start: 1;
   margin-top: -52%;;
-  /* height: 200px; */
-  /* display: block;
-  /* position: fixed; */
-  /* height: 200px;
-  z-index: 5; */
 }
 #app {
   display: block;
@@ -56,4 +46,5 @@
   display: block;
   margin: 0 auto;
   transform: translateX(-150px);
+  overflow: visible;
 }
