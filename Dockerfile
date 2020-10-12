@@ -1,13 +1,13 @@
 FROM node:12.16.1
 
-RUN mkdir -p /app
+WORKDIR /usr/src/app
 
-WORKDIR /app
+COPY package.json .
 
-COPY . /app
+RUN npm install --production
 
-RUN npm install
+COPY . .
 
 EXPOSE 3004
 
-CMD ["node", "server/server.js"]
+CMD ["npm", "start"]
