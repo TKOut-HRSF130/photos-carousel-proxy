@@ -45,7 +45,7 @@ app.get('/api/bookings/:id', (req, res) => {
 
 // -------------- Photos --------------------------------
 app.get('/api/restaurants/photos/:id', (req, res) => {
-  axios.get(`http://34.201.104.34/api/restaurants/photos/${req.params.id}`)
+  axios.get(`http://localhost:3003/api/restaurants/photos/${req.params.id}`)
     .then((response) => {
       res.status(200).send(response.data)
     })
