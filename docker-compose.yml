@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    container_name: billymaguire3/proxy-live
+    image: billymaguire3/proxy-live:latest
+    restart: always
+    build: ./
+    ports:
+      - "80:3004"
